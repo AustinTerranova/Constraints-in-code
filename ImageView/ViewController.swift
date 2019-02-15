@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             NSLayoutConstraint(item: imageView,
                                attribute: .trailing,
                                relatedBy: NSLayoutConstraint.Relation.equal,
-                               toItem: imageView,
+                               toItem: superview,
                                attribute: .trailingMargin,
                                multiplier: 1.0,
                                constant: 0)
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             NSLayoutConstraint(item: imageView,
                                attribute: .leading,
                                relatedBy: NSLayoutConstraint.Relation.equal,
-                               toItem: imageView,
+                               toItem: superview,
                                attribute: .leadingMargin,
                                multiplier: 1.0,
                                constant: 0)
@@ -65,14 +65,14 @@ class ViewController: UIViewController {
         myConstraint =
            NSLayoutConstraint(item: imageView,
                                 attribute: .top, relatedBy: NSLayoutConstraint.Relation.equal,
-                                toItem: imageView,
+                                toItem: superview,
                                attribute: .topMargin, multiplier: 1.0,
                                constant: 0)
         superview?.addConstraint(myConstraint)
         myConstraint =
             NSLayoutConstraint(item: imageView,
                                attribute: .bottom, relatedBy: NSLayoutConstraint.Relation.equal,
-                               toItem: imageView,
+                               toItem: superview,
                                attribute: .bottomMargin, multiplier: 1.0,
                                constant: 0)
         
